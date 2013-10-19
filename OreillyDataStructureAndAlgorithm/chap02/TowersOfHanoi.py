@@ -18,4 +18,5 @@ if __name__=="__main__":
     argv = sys.argv;
     if len(argv) > 1:
         n_disk = int(argv[1]) if argv[1].isdigit() else n_disk;
+
     TowersOfHanoi(n_disk, 1, 3, 2);
