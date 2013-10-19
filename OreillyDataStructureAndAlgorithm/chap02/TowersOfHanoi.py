@@ -1,3 +1,7 @@
+# Narasimha Karumanchi　著、黒川 利明、木下 哲也　訳,
+#   "入門 データ構造とアルゴリズム", 2013, オライリー・ジャパン
+#  p.35 「問題2-1 ハノイの塔を論ぜよ」の解をPythonでコード。
+
 def TowersOfHanoi(n, frompeg, topeg, auxpeg):
     print "TowersOfHanoi(%d, %d, %d, %d)"%(n, frompeg, topeg, auxpeg);
     
