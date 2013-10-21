@@ -1,6 +1,13 @@
-# Narasimha Karumanchi　著、黒川 利明、木下 哲也　訳,
-#   "入門 データ構造とアルゴリズム", 2013, オライリー・ジャパン
-#  p.35 「問題2-1 ハノイの塔を論ぜよ」の解をPythonでコード。
+#!/usr/bin/env python
+# coding: utf-8 
+
+""" 
+Narasimha Karumanchi　著、黒川 利明、木下 哲也　訳,
+  "入門 データ構造とアルゴリズム", 2013, オライリー・ジャパン
+  p.35 「問題2-1 ハノイの塔を論ぜよ」の解をPythonでコード。
+
+Usage: python TowersOfHanoi.py [NUMBER_OF_DISKS]
+"""
 
 def TowersOfHanoi(n, frompeg, topeg, auxpeg):
     print "TowersOfHanoi(%d, %d, %d, %d)"%(n, frompeg, topeg, auxpeg);
@@ -16,6 +23,10 @@ def TowersOfHanoi(n, frompeg, topeg, auxpeg):
     TowersOfHanoi(n-1, auxpeg, topeg, frompeg);
 
 if __name__=="__main__":
+    print "-"*60
+    print __doc__
+    print "-"*60,"\n"
+    
     n_disk=3;
     
     import sys;

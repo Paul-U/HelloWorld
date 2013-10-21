@@ -1,4 +1,14 @@
+#!/bin/python
+# coding: utf-8
+
+"""
+TowersOfHanoi.pyをアニメーション表示します。
+
+Usage: python TowersOfHanoi.py [NUMBER_OF_DISKS]
+"""
+
 import sys;
+import os;
 import re;
 import cStringIO
 import TowersOfHanoi;
@@ -39,10 +49,12 @@ class Towers:
             
         self.update();
         print self._acts;
+        os.system("pause")
         for act in self._acts:
             print act[0],act[1]
             self._pegs[act[1]-1].append(self._pegs[act[0]-1].pop());
             self.update();
+            os.system("clear");
 
 def TowersOfHanoiGraphic(n):
     stdout = sys.stdout;
@@ -57,6 +69,10 @@ def TowersOfHanoiGraphic(n):
     towers.show()
     
 if __name__=="__main__":
+    print "-"*60
+    print __doc__
+    print "-"*60,"\n"
+    
     n_disk=3;
     
     argv = sys.argv;

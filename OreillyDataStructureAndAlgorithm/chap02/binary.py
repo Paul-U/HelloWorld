@@ -1,6 +1,11 @@
-# Narasimha Karumanchi　著、黒川 利明、木下 哲也　訳,
-#   "入門 データ構造とアルゴリズム", 2013, オライリー・ジャパン
-#  p.36 「問題2-2 nビットのすべての列を生成せよ。」の解をPythonでコード。
+#!/bin/python
+# coding: utf-8
+
+"""
+ Narasimha Karumanchi　著、黒川 利明、木下 哲也　訳,
+   "入門 データ構造とアルゴリズム", 2013, オライリー・ジャパン
+  p.36 「問題2-2 nビットのすべての列を生成せよ。」の解をPythonでコード。
+"""
 
 class Binary:
     def __init__(self,n):
@@ -19,4 +24,8 @@ class Binary:
             self.__binary(n-1);
 
 if __name__=="__main__":
+    print "-"*60
+    print __doc__
+    print "-"*60,"\n"
+    
     Binary(10);
